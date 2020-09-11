@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fitsdataset",
-    version="0.0.1",
+    version="0.0.2",
     author="Amrit Rau",
     description="A PyTorch Dataset for the FITS file format",
     long_description=long_description,
