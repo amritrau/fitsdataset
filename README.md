@@ -1,7 +1,7 @@
 FITSDataset
 ===
 
-This package contains a custom PyTorch Dataset for quick and easy training on FITS files, commonly used in astronomical data analysis. In particular, the `FITSDataset` class preloads FITS files as PyTorch tensors for the purpose of increasing training speed.
+This package contains a custom PyTorch Dataset for quick and easy training on FITS files, commonly used in astronomical data analysis. In particular, the `FITSDataset` class caches FITS files as PyTorch tensors for the purpose of increasing training speed.
 
 Contributions and feedback are welcome; please open a pull request or an issue.
 
@@ -15,5 +15,7 @@ Create a toy dataset with samples from the
 [Hyper Suprime-Cam survey](https://www.naoj.org/Projects/HSC/) with:
 ```python
 from fitsdataset import FITSDataset
-dataset = FITSDataset("examples/hsc/", size=101, label="target")
+dataset = FITSDataset("path/to/examples/hsc/", size=101, label_col="target")
 ```
+
+Notice that the cached tensors appear in `path/to/examples/hsc/tensors`.
