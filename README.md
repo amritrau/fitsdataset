@@ -1,5 +1,6 @@
 FITSDataset
 ===
+[![PyPI version](https://badge.fury.io/py/fitsdataset.svg)](https://badge.fury.io/py/fitsdataset)
 
 This package contains a custom PyTorch Dataset for quick and easy training on FITS files, commonly used in astronomical data analysis. In particular, the `FITSDataset` class caches FITS files as PyTorch tensors for the purpose of increasing training speed.
 
