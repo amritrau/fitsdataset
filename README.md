@@ -21,9 +21,7 @@ Create a toy dataset with samples from the
 Notice that the cached tensors appear in `path/to/examples/hsc/tensors`.
 
 ## Documentation
-```python
->>> from fitsdataset import FITSDataset
->>> help(FITSDataset)
+```
 class FITSDataset(torch.utils.data.dataset.Dataset)
  |  FITSDataset(data_dir, size, label_col, filename_col='file_name', channels=1, transform=None)
  |  
@@ -83,5 +81,10 @@ class FITSDataset(torch.utils.data.dataset.Dataset)
  |  load_fits_as_tensor(filename)
  |      Read a FITS file from disk and convert it to a Torch tensor.
  |  
+ ```
 
+From the REPL:
+```python
+>>> from fitsdataset import FITSDataset
+>>> help(FITSDataset)
 ```
