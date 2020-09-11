@@ -8,7 +8,7 @@ Contributions and feedback are welcome; please open a pull request or an issue.
 ## Quickstart
 Using Python 3.6+, install from source with
 ```bash
-pip install git+https://github.com/amritrau/fits-dataset.git
+pip install git+https://github.com/amritrau/fitsdataset.git
 ```
 
 Create a toy dataset with samples from the
