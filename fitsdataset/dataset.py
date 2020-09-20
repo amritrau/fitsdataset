@@ -13,7 +13,7 @@ class FITSDataset(Dataset):
     improve data load speed while training."""
 
     def __init__(self, data_dir, size, label_col, filename_col="file_name",
-                    channels=1, transform=None):
+                 channels=1, transform=None):
         """Instantiates a FITS dataset backed by a data directory. The data
         directory should have the following structure:
 
