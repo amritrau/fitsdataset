@@ -107,7 +107,7 @@ class FITSDataset(Dataset):
             raise TypeError("Invalid argument type: {}".format(type(index)))
 
     def __len__(self):
-        """Return the length of the dataset."""
+        """Get the length of the dataset."""
         return len(self.labels)
 
     def load_tensor(self, filename):
